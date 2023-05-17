@@ -31,8 +31,6 @@ body {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  /* align-items: center; */
-  gap: 1rem;
   max-width: 80%;
 
   background-color: var(--primary-dark-desaturated-blue);
@@ -68,12 +66,11 @@ img {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  margin: 1.2rem;
+  gap: 1.1rem;
+  padding: 2rem 2rem;
 }
 
-.content h1 label {
+.content h2 label {
   color: var(--primary-soft-violet);
 }
 
@@ -105,15 +102,25 @@ img {
 
 @media (min-width: 600px) {
   .card {
-    max-width: 60%;
+    max-width: 80%;
   }
 
   .content {
     align-self: center;
     text-align: left;
-    gap: 3.5rem;
-    /* gap: 4rem; */
-    /* padding: 3rem; */
+    padding: 0 6rem;
+  }
+
+  .content-description {
+    margin-right: 3.9rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .content h2 {
+    font-size: 2.5rem;
   }
 
   .header-image > img[device="mobile"] {
@@ -124,14 +131,8 @@ img {
     display: block;
   }
 
-  .header-image {
-    min-width: 490px;
-    max-width: 540px;
-  }
-
   .info {
     flex-direction: row;
-    justify-content: space-between;
-    margin-right: 4rem;
+    gap: 4.8rem;
   }
 }
